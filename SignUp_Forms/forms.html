@@ -1,104 +1,71 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>My test page</title>
-  </head>
-  <body>
-    <form>
-        <h1>Payment form</h1>
-        <p>
-          Required fields are followed by
-          <strong><span aria-label="required">*</span></strong>.
-        </p>
-        <section>
-            <h2>Contact information</h2>
-            <fieldset>
-              <legend>Title</legend>
-              <ul>
-                <li>
-                  <label for="title_1">
-                    <input type="radio" id="title_1" name="title" value="A" />
-                    Ace
-                  </label>
-                </li>
-                <li>
-                  <label for="title_2">
-                    <input type="radio" id="title_2" name="title" value="K" />
-                    King
-                  </label>
-                </li>
-                <li>
-                  <label for="title_3">
-                    <input type="radio" id="title_3" name="title" value="Q" />
-                    Queen
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <p>
-              <label for="name">
-                <span>Name: </span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input type="text" id="name" name="username" required />
-            </p>
-            <p>
-              <label for="mail">
-                <span>Email: </span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input type="email" id="mail" name="user-mail" required />
-            </p>
-            <p>
-              <label for="pwd">
-                <span>Password: </span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input type="password" id="pwd" name="password" required />
-            </p>
-          </section>
-          <section>
-            <h2>Payment information</h2>
-            <p>
-              <label for="card">
-                <span>Card type:</span>
-              </label>
-              <select id="card" name="user-card">
-                <option value="visa">Visa</option>
-                <option value="mc">Mastercard</option>
-                <option value="amex">American Express</option>
-              </select>
-            </p>
-            <p>
-              <label for="number">
-                <span>Card number:</span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input type="tel" id="number" name="card-number" required />
-            </p>
-            <p>
-              <label for="expiration">
-                <span>Expiration date:</span>
-                <strong><span aria-label="required">*</span></strong>
-              </label>
-              <input
-                type="text"
-                id="expiration"
-                name="expiration"
-                required
-                placeholder="MM/YY"
-                pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$" />
-            </p>
-          </section>
-          <section>
-            <p>
-              <button type="submit">Validate the payment</button>
-            </p>
-          </section>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="C:\Users\yongy\Dropbox\My PC (DESKTOP-0QJ72EG)\Desktop\oden-project\SignUp_Forms\formstyle.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1>Sign up below to subscribe!</h1>
+
+  <div class="container">
+    <div class="picture-side">
+
+    </div>
+    <div class="form-side">
+      <form action="results.html" method="get">
+          <label for="first_name">First Name</label>
+          <input type="text" 
+          id="first_name" 
+          name="first_name" 
+          placeholder="Mason">
+
           
-         
-    </form>
-  </body>
+          <label for="last_name">Last Name</label>
+          <input type="text" 
+          id="last_name" 
+          name="last_name" 
+          placeholder="Yongyuth">
+
+          
+          <label for="email">Email</label>
+          <input type="email" 
+          id="email" 
+          name="email" 
+          placeholder="mason@gmail.com">
+
+          
+          <label for="phone_number">Phone Number</label>
+          <input type="tel" 
+          id="phone_number" 
+          name="phone_number" 
+          placeholder="(***) -*** -****">
+
+          
+          <label for="password">Password</label>
+          <input type="password" 
+          id="password" 
+          name="password" 
+          placeholder="Minimum 8 digits">
+
+          
+          <label for="confirm">Confirm Password</label>
+          <input type="password" 
+          id="confirm" 
+          name="confirm" 
+          placeholder="Must match password">
+
+          
+          <button>Submit</button>
+          <button type="reset">Clear</button>
+
+
+      </form>
+    </div>
+    
+  </div>
+  
+</body>
 </html>

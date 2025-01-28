@@ -1,62 +1,81 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 90%vh; 
+}
+
+.picture-side {
+  flex: 1; 
+  background-image: url('C:/Users/yongy/Dropbox/My PC (DESKTOP-0QJ72EG)/Desktop/oden-project/SignUp_Forms/MasonFlowers.JPG');
+  background-size: cover; 
+  background-position: center; 
+  opacity: 0.7; 
+}
+
+.form-side {
+  flex: 1;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  background-color: #f9f9f9;
+  padding: 40px; 
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
+}
+
+form label {
+  display: block; 
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%; 
+  max-width: 300px; 
+  padding: 10px; 
+  font-size: 1rem; 
+  border: 1px solid #ffe8e8; 
+  border-radius: 5px; 
+}
+
+form button {
+  width: 100%;
+  max-width: 300px; 
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #fcbeee;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgba(252, 212, 237, 0.667)
+}
+
 body {
-    /* Center the form on the page */
-    text-align: center;
-  }
-  
-  form {
-    display: inline-block;
-    /* Form outline */
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-  }
-  
-  p + p {
-    margin-top: 1em;
-  }
-  
-  label {
-    /* Uniform size & alignment */
-    display: inline-block;
-    min-width: 90px;
-    text-align: right;
-  }
-  
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, text areas have a monospace font */
-    font: 1em sans-serif;
-    /* Uniform text field size */
-    width: 300px;
-    box-sizing: border-box;
-    /* Match form field borders */
-    border: 1px solid #999;
-  }
-  
-  input:focus,
-  textarea:focus {
-    /* Set the outline width and style */
-    outline-style: solid;
-    /* To give a little highlight on active elements */
-    outline-color: #000;
-  }
-  
-  textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-    /* Provide space to type some text */
-    height: 5em;
-  }
-  
-  .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 0.5em;
-  }
-  
+  color: #646464;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center; 
+  padding: 20px;
+}
