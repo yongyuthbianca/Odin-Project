@@ -1,22 +1,28 @@
-// Create a new element
-const heading = document.createElement("h1");
+const hello = document.querySelector("#hello");
+const red = document.createElement("p");
+red.classList.add("container");
+red.textContent = "Hey I'm red!"
+red.style.cssText = "color: red";
+
+hello.appendChild(red);
 
 
+const blue = document.createElement("h3");
+blue.classList.add("container");
+blue.textContent = "I'm a blue H3";
+blue.style.cssText = "color: blue";
+red.appendChild(blue);
 
-function Book(title, author, pages, read){
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read !== undefined ? read : true;
-}
+const border = document.createElement("div");
+border.classList.add("border-container");
+border.style.cssText = "border: 1px solid black; background: pink";
 
+const mini = document.createElement("div");
+mini.textContent = "I'm in a div";
+const me = document.createElement("p");
+me.textContent = "ME TOO!";
 
-const hobbit = new Book("the Hobbit", "JRR", 295, true);
+border.appendChild(mini);
+border.appendChild(me);
 
-
-const bookDescription = `Title: ${hobbit.title}, Author: ${hobbit.author}, Pages: ${hobbit.pages}, Read: ${hobbit.read}`;
-
-heading.textContent = bookDescription;
-
-// Add the element to the body of the page
-document.body.appendChild(heading);
+blue.appendChild(border);
